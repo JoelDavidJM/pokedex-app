@@ -1,0 +1,18 @@
+.selectType__container {
+    height: 2rem;
+    width: 7rem;
+    background-color: rgb(87, 71, 235);
+    color: white;
+    transition: transform 1s ease, background-color 1s ease, color 1s ease; 
+    &:hover {
+        color: black;
+        background-color: rgb(149, 166, 241);
+        transform: scale(1.1);
+    }
+}
+
+.selectType__all {
+    border: none;
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,250 @@
+.homePage {
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(240, 23, 23), white, rgb(37, 37, 240));
+}
+
+.homePage__start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden ; 
+    
+}
+
+.homePage__container__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.homePage__container__img {
+    position: relative;
+    top: -5em;
+}
+
+.homePage__img {
+    margin: 0;
+    width: 100em;
+}
+
+.homePage__container__title {
+    position: relative;
+    bottom: 23em;
+}
+
+.homePage__title {
+    text-align: center;
+    margin: 0.5em;
+    font-size: 3rem;
+}
+
+.homePage__p {
+    text-align: center;
+    margin: 0.5em;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.homePage__form {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    z-index: 10;
+    position: relative;
+}
+
+.homePage__input {
+    height: 2rem;
+    width: 15rem;
+}
+
+.homePage__btn {
+    background-color: rgb(245, 49, 49);
+    color: rgb(12, 11, 11);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: transform 1s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.homePage__container__img {
+    position: relative;
+}
+
+.homePage__img1 {
+    position: relative;
+    bottom: 49em;
+    right: 39em;
+    animation: moveUpDown 1.5s ease-in-out infinite; 
+}
+
+.homePage__img2 {
+    position: relative;
+    bottom: 49em;
+    right: 28em;
+    animation: moveUpLeft 1.5s ease-in-out infinite; 
+}
+
+.homePage__img3 {
+    position: relative;
+    bottom: 94em;
+    left: 35em;
+    animation: moveUpDown 1.5s ease-in-out infinite; 
+}
+
+.homePage__img4 {
+    position: relative;
+    bottom: 95em;
+    left: 30em;
+    animation: moveUpLeft 1.5s ease-in-out infinite; 
+}
+
+.homePage__img5 {
+    position: relative;
+    top: -145em;
+    animation: moveUpLeft 1.5s ease-in-out infinite; 
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveUpLeft {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .homePage__img1 {
+        position: relative;
+        bottom: 49em;
+        right: 30em;
+        animation: moveUpDown 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img2 {
+        position: relative;
+        bottom: 49em;
+        right: 28em;
+        animation: moveUpLeft 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img4 {
+        position: relative;
+        bottom: 95em;
+        left: 25em;
+        animation: moveUpLeft 1.5s ease-in-out infinite; 
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .homePage__img {
+        margin: 0;
+        width: 70em;
+        top: 1.9em;
+        position: relative;
+    }
+    .homePage__container__title {
+        position: relative;
+        bottom: 15em;
+    }
+    .homePage__img1 {
+        position: relative;
+        bottom: 39em;
+        right: 23em;
+        animation: moveUpDown 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img2 {
+        position: relative;
+        bottom: 35em;
+        right: 20em;
+        animation: moveUpLeft 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img3 {
+        position: relative;
+        bottom: 80em;
+        left: 20em;
+        animation: moveUpDown 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img4 {
+        position: relative;
+        bottom: 80em;
+        left: 20em;
+        animation: moveUpLeft 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img5 {
+        position: relative;
+        top: -125em;
+        animation: moveUpLeft 1.5s ease-in-out infinite; 
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .homePage__p {
+        text-align: center;
+        margin: 0.5em;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .homePage__img1 {
+        position: relative;
+        bottom: 35em;
+        right: 9em;
+        animation: moveUpDown 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img2 {
+        position: relative;
+        bottom: 20em;
+        right: 10em;
+        animation: moveUpLeft 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img3 {
+        position: relative;
+        bottom: 30em;
+        left: 10em;
+        animation: moveUpDown 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img4 {
+        position: relative;
+        bottom: 33em;
+        left: 2em;
+        animation: moveUpLeft 1.5s ease-in-out infinite; 
+    }
+    
+    .homePage__img5 {
+        position: relative;
+        top: -75em;
+        left: 6em;
+        animation: moveUpLeft 1.5s ease-in-out infinite; 
+    }
+  } 

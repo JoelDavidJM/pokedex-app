@@ -1,0 +1,243 @@
+.pokemonPage__container__start {
+        position: relative;
+        padding: 2em;
+        border-radius: 0;
+        background: var(--border-gradient);
+}
+
+.pokemonPage__container {
+    padding: 1.5em;
+}
+
+.pokemonPage__info__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 1em black;
+    align-content: space-between;
+    padding: 1em;
+    border-radius: 1em;
+    background: white;
+}
+
+.pokemonPage__container__img {
+    background: var(--color);
+    border-radius: 1.5em;
+}
+
+.pokemonPage__start {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pokemonPage__container__info {
+    text-align: center;
+    font-size: 5.5vw;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+    text-transform: capitalize;
+    color: var(--color);
+    border: none;
+}
+
+.pokemonPage__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.pokemonPage__container__height{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+.pokemonPage__container__weight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.pokemonPage__height{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #aaa;
+}
+
+.pokemonPage__weight {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #aaa;
+}
+
+.pokemonPage__span__height{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.pokemonPage__span__weight{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.pokemonPage__info {
+    display: flex;
+    gap: 13vw;
+}
+
+.pokemonPage__container__type {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.pokemonPage__type {
+    margin-bottom: 1em;
+    font-size: 1.3rem;
+    font-weight: 800;
+    background: var(--header-gradient);
+    border: none;
+    padding: 0.6em;
+    color: var(--colorWord);
+}
+
+.pokemonPage__span__type{
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 0.7em;
+}
+
+.pokemonPage__container__ability {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.pokemonPage__ability {
+    margin-bottom: 1em;
+    font-size: 1.3rem;
+    font-weight: 800;
+    border: none;
+    background: var(--header-gradient);
+    padding: 0.6em;
+    color: var(--colorWord);
+}
+
+.pokemonPage__span__ability{
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 0.7em;
+}
+
+.pokemonPage__statistics {
+    box-shadow: 0 0 1em black;
+    border-radius: 1em;
+    padding: 2em;
+    margin-top: 2em;
+    background: white;
+}
+
+.pokemonPage__hr {
+    border: 1px solid #aaaa;
+    margin-bottom: 2em;
+    width: 30vw;
+}
+
+.pokemonPage__title__stats {
+    color: var(--color);
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.pokemonPage__stats__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em
+}
+
+.progress__bar__stats {
+    border: none;
+    width: 100%;
+    height: 1em;
+}
+::-webkit-progress-value {
+    background: var(--header-gradient);
+}
+::-webkit-progress-bar {
+    background: var(--stats);
+}
+.progress__bar__stats {
+    animation: js 5s forwards;
+    border-radius: 4rem;
+}
+
+@keyframes js{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.pokemonPage__start__movie {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 0 1em black;
+}
+
+.pokemonPage__title__movie {
+    text-align: center;
+    margin: 0.5em;
+    font-size: 1.9rem;
+    color: var(--color);
+    border: none;
+}
+
+.pokemon__container__movie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon__list__movie {
+    padding: 1.5em;
+    text-transform: capitalize;
+    transition: transform 0.7s ease;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.pokemon__movie__span {
+    background: var(--border-gradient);
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap; 
+    color: var(--colorWord);
+}
